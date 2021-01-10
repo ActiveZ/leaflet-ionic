@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LeafletMapComponent } from './components/leaflet-map/leaflet-map.component';
-import { PageMapPage } from './pages/page-map/page-map.page';
+import { PlannerPage } from './pages/planner/planner.page';
 
 const routes: Routes = [
   // {
   //   path: 'home',
   //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   // },
-
   {
-    path:'test',
+    path:'planner',
+    component: PlannerPage
+  },
+  {
+    path:'map',
     component: LeafletMapComponent
   },
   {
@@ -18,12 +21,12 @@ const routes: Routes = [
     component: LeafletMapComponent
   },
   // {
-  //   path: '',
-  //   component: PageMapPage
+  //   path: 'planner',
+  //   loadChildren: () => import('./pages/planner/planner.module').then( m => m.PlannerPageModule)
   // },
   // {
-  //   path: 'page-map',
-  //   loadChildren: () => import('./pages/page-map/page-map.module').then( m => m.PageMapPageModule)
+  //   path: '',
+  //   component: PageMapPage
   // },
 ];
 

@@ -9,11 +9,13 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LeafletMapComponent } from './components/leaflet-map/leaflet-map.component';
+import { PlannerPage } from './pages/planner/planner.page';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeafletMapComponent
+    LeafletMapComponent,
+    PlannerPage
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
